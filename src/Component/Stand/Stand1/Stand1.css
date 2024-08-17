@@ -1,0 +1,43 @@
+.konten{
+  display: flex;
+  justify-content: left;
+  padding: 0px 15px 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nama{
+  padding: 20px 25px 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Stand1.css */
+.kotak {
+    background-color: #d1a05c;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    width: 200px, auto;
+    margin: 5px;
+    display: flex;
+    align-items:0;
+  }
+  
+  .kotak img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+.kalimat{
+  padding: 0px 20px 5%;
+}
+
+@media (max-width: 768px){
+  .konten{
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+}

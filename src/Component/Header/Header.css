@@ -1,0 +1,40 @@
+/* Header.css */
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 0px; /* Sesuaikan dengan tinggi header agar konten tidak tersembunyi di belakang header */
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .fixed-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fixed-header nav ul li {
+    margin: 0 15px;
+  }
+  
+  .fixed-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .fixed-header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }  

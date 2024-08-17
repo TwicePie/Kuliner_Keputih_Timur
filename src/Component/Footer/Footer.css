@@ -1,0 +1,19 @@
+/* Footer.css */
+.footer {
+  background-color: #000; /* Warna latar belakang hitam */
+  color: white; /* Warna teks putih */
+  text-align: center; /* Teks rata tengah */
+  position: relative; /* Agar footer tidak bertindih dengan elemen lain */
+  width: 100%; /* Lebar penuh */
+  margin-top: 0px; /* Jarak atas agar tidak terlalu menempel dengan konten sebelumnya */
+}
+
+.footer .container {
+  max-width: 1200px; /* Lebar maksimal container */
+  margin: 0 auto; /* Tengah-tengahkan container */
+}
+
+.footer-text {
+  margin: 0; /* Hilangkan margin default pada paragraf */
+  padding: 10px 0; /* Tambahkan sedikit padding di atas dan bawah teks */
+}

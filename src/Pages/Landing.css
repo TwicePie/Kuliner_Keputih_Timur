@@ -1,0 +1,19 @@
+/* Landing.css */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .landing-container .content {
+    flex-grow: 1;
+  }
+  
+  footer {
+    flex-shrink: 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
