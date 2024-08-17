@@ -143,6 +143,10 @@ body {
 }
 
 @media (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  
   .menu-button{
     padding: 5px 5px;
     font-size: 10px;
