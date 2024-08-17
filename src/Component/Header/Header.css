@@ -2,7 +2,9 @@
 body {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
-    padding-top: 0px; /* Sesuaikan dengan tinggi header agar konten tidak tersembunyi di belakang header */
+    padding-top: 0px; 
+    width: 100%;
+    overflow-x: hidden;
   }
   
   .fixed-header {
