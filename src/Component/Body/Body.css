@@ -146,7 +146,34 @@ body {
   body{
     overflow-x: hidden;
   }
-  
+
+  .welcome{
+    padding: 0px, 50px, 420px;
+    font-size: 60px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 120px 10px 75px;
+  }
+
+  .card {
+    background-color: #d1a05c;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
   .menu-button{
     padding: 5px 5px;
     font-size: 10px;
