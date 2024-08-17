@@ -24,14 +24,5 @@ footer {
 
 /* Reset beberapa properti yang mungkin menimbulkan masalah */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box; /* Menghindari overflow akibat padding/border */
-}
-
-body {
-  margin: 0;
-  font-family: 'DM Sans', sans-serif;
-  padding-top: 0px; /* Sesuaikan dengan tinggi header agar konten tidak tersembunyi di belakang header */
-  overflow-x: hidden; /* Tambahan untuk mencegah scroll horizontal di body */
 }
