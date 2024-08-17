@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif; /* Mengganti font menjadi DM Sans */
   background-color: #92500033;
+  overflow-x: hidden;
 }
 
 .content {
