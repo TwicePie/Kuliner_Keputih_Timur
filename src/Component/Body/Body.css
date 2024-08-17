@@ -11,7 +11,7 @@ body {
 
 .welcome{
   position: relative;
-  padding: 100px 50px 420px;
+  padding: 10px 50px 520px;
   background-image: url('belakang2.jpg');
   background-size: cover;
   color: #fff;
@@ -28,7 +28,8 @@ body {
   .welcome .pujas {
     position: relative;
     z-index: 2;
-    margin-top: 0; /* Menghilangkan jarak atas untuk "PUJASERA KKT" */
+    margin-top: 0;
+    margin-bottom: 10px; /* Menghilangkan jarak atas untuk "PUJASERA KKT" */
   }
   .welcome::before{
     content: '';
@@ -46,6 +47,7 @@ body {
   }
   .welcome .menikmati{
     font-size: 35px;
+    margin-top: 0;
   }
   .welcome .Menu-but{
     position: relative;
