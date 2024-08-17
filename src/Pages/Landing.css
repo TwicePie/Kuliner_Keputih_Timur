@@ -1,19 +1,37 @@
 /* Landing.css */
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .landing-container .content {
-    flex-grow: 1;
-  }
-  
-  footer {
-    flex-shrink: 0;
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* Mencegah overflow horizontal */
+  width: 100%; /* Pastikan lebar container 100% */
+}
+
+.landing-container .content {
+  flex-grow: 1;
+  width: 100%; /* Pastikan konten menempati 100% lebar */
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Pastikan footer juga memiliki lebar 100% */
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
+}
+
+/* Reset beberapa properti yang mungkin menimbulkan masalah */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Menghindari overflow akibat padding/border */
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  padding-top: 0px; /* Sesuaikan dengan tinggi header agar konten tidak tersembunyi di belakang header */
+  overflow-x: hidden; /* Tambahan untuk mencegah scroll horizontal di body */
+}

@@ -6,6 +6,7 @@
   position: relative; /* Agar footer tidak bertindih dengan elemen lain */
   width: 100%; /* Lebar penuh */
   margin-top: 0px; /* Jarak atas agar tidak terlalu menempel dengan konten sebelumnya */
+  overflow-x: hidden;
 }
 
 .footer .container {
