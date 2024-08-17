@@ -6,7 +6,6 @@ import Stand3 from '../Stand/Stand3/Stand3';
 import Stand4 from '../Stand/Stand4/Stand4';
 import Stand5 from '../Stand/Stand5/Stand5';
 import Stand6 from '../Stand/Stand6/Stand6';
-import Stand7 from '../Stand/Stand7/Stand7';
 import Stand8 from '../Stand/Stand8/Stand8';
 import AboutUs from '../About/AboutUs';
 
@@ -71,10 +70,6 @@ function Body() {
           <img src={`${process.env.PUBLIC_URL}/Gambar/Warung/mr.psteak.jpg`} alt="Tenant 6" />
           <p>MR P.STEAK</p>
         </button>
-        <button className="card" onClick={() => showTenant('tenant7')}>
-          <img src={`${process.env.PUBLIC_URL}/Gambar/Warung/Penyetan.jpg`} alt="Tenant 7" />
-          <p>PENYETAN NASI</p>
-        </button>
         <button className="card" onClick={() => showTenant('tenant8')}>
           <img src={`${process.env.PUBLIC_URL}/Gambar/Warung/sate.jpg`} alt="Tenant 8" />
           <p>SATE AYAM</p>
@@ -103,9 +98,6 @@ function Body() {
         <button className={`menu-button ${activeTenant === 'tenant6' ? 'active' : ''}`} onClick={() => showTenant('tenant6')}>
           MR P.STEAK
         </button>
-        <button className={`menu-button ${activeTenant === 'tenant7' ? 'active' : ''}`} onClick={() => showTenant('tenant7')}>
-          PENYETAN NASI
-        </button>
         <button className={`menu-button ${activeTenant === 'tenant8' ? 'active' : ''}`} onClick={() => showTenant('tenant8')}>
           SATE AYAM
         </button>
@@ -118,7 +110,6 @@ function Body() {
         {activeTenant === 'tenant4' && <Stand4 />}
         {activeTenant === 'tenant5' && <Stand5 />}
         {activeTenant === 'tenant6' && <Stand6 />}
-        {activeTenant === 'tenant7' && <Stand7 />}
         {activeTenant === 'tenant8' && <Stand8 />}
       </div>
     </div>
