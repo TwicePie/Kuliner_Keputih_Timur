@@ -72,7 +72,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 120px 0px 75px;
+  padding: 75px 0px 75px;
 }
 
 .card {
@@ -99,7 +99,20 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 10px;
   }
+
+.upword{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
 
 .midword{
   background-color: #000;
@@ -113,25 +126,33 @@ body {
 }
 
 .tenant-menu {
-    display: flex;
-    justify-content: center;
-    padding: 0px 15px 10px;
-    background-color: #000;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  padding: 10px 0; /* Adjust padding for better spacing */
+  background-color: #000;
+  margin-bottom: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents line wrapping */
 }
 
 .menu-button {
-    color: #d1a05c; /* Gold color for text */
-    background: #1e1e1e; /* Dark background for the button */
-    border: none; /* Remove border */
-    font-size: 18px; /* Larger font size */
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 5px;
-    border-radius: 25px; /* Rounded corners */
-    font-family: 'Times New Roman', Times, serif;
+  color: #d1a05c; /* Gold color for text */
+  background: #1e1e1e; /* Dark background for the button */
+  border: none; /* Remove border */
+  font-size: 18px; /* Larger font size */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+  border-radius: 25px; /* Rounded corners */
+  font-family: 'Times New Roman', Times, serif;
+  flex-shrink: 0; /* Prevents buttons from shrinking */
+  white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+.menu-button:last-child {
+  margin-right: 0; /* Remove margin on the last button */
 }
 
 .menu-button:hover {
@@ -158,7 +179,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 120px 10px 75px;
+    padding: 100px 10px 75px;
   }
 
   .card {
