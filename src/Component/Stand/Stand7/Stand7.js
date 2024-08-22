@@ -9,28 +9,28 @@ function Stand7() {
       <h3 className='nama'>Tenant 7 | SATE AYAM</h3>
       <div className="konten">
         <div className="kotak">
-          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" />
+          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" className='image_tenant'/>
           <div className="kalimat">
             <p>Tenant 7 | SATE AYAM</p>
             <h2>SATE AYAM</h2>
           </div>
         </div>
         <div className="kotak">
-          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" />
+          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" className='image_tenant'/>
           <div className="kalimat">
             <p>Tenant 7 | SATE AYAM</p>
             <h2>SATE KAMBING</h2>
           </div>
         </div>
         <div className="kotak">
-          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" />
+          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" className='image_tenant'/>
           <div className="kalimat">
             <p>Tenant 7 | SATE AYAM</p>
             <h2>SATE DAGING</h2>
           </div>
         </div>
         <div className="kotak">
-          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" />
+          <img src={`${process.env.PUBLIC_URL}/Gambar/Makanan/penyetan_ayam.jpg`} alt="Stand 1" className='image_tenant'/>
           <div className="kalimat">
             <p>Tenant 7 | SATE AYAM</p>
             <h2>SATE KOMOOH</h2>
