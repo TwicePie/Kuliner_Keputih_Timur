@@ -170,7 +170,7 @@ function Body() {
         <button className={`menu-button ${activeTenant === 'tenant6' ? 'active' : ''}`} onClick={() => showTenant('tenant6')}>
           MR P.STEAK
         </button>
-        <button className={`menu-button ${activeTenant === 'tenant8' ? 'active' : ''}`} onClick={() => showTenant('tenant8')}>
+        <button className={`menu-button ${activeTenant === 'tenant7' ? 'active' : ''}`} onClick={() => showTenant('tenant7')}>
           SATE AYAM
         </button>
         <button className={`menu-button ${activeTenant === 'tenant8' ? 'active' : ''}`} onClick={() => showTenant('tenant8')}>
