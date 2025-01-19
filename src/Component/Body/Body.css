@@ -1,205 +1,267 @@
+/* Base styles */
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif; /* Mengganti font menjadi DM Sans */
-  background-color: #92500033;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #92500033 0%, #ffffff 100%);
   overflow-x: hidden;
+  color: #333;
 }
 
 .content {
-  padding: 40px 0px 0px; /* Tambahkan padding-top yang lebih besar agar tidak bertabrakan dengan header */
+  padding-top: 40px;
 }
 
-.welcome{
+/* Hero section */
+.welcome {
   position: relative;
-  padding: 10px 50px 520px;
+  min-height: 80vh;
+  padding: 60px 50px;
   background-image: url('belakang2.jpg');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 80px;
-  font-weight:900;
-}
-  .welcome .selamat {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 10px; /* Mengatur jarak bawah untuk "Selamat Datang di" */
-  }
-
-  .welcome .pujas {
-    position: relative;
-    z-index: 2;
-    margin-top: 0;
-    margin-bottom: 10px; /* Menghilangkan jarak atas untuk "PUJASERA KKT" */
-  }
-  .welcome::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  .welcome h1, .welcome p{
-    position: relative;
-    z-index: 2;
-  }
-  .welcome .menikmati{
-    font-size: 35px;
-    margin-top: 0;
-  }
-  .welcome .Menu-but{
-    position: relative;
-    z-index: 3;
-    padding: 10px 20px ;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    border: 2px solid #d1a05c; /* Gold border color */
-    border-radius: 25px; /* Rounded corners */
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 30px;
-    margin-right: 10px;
-  }
-  .welcome .Menu-but:hover{
-    background-color: #70552b;
-    color: rgb(255, 255, 255);
-  }
-
-.card-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 75px 0px 75px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.welcome .selamat,
+.welcome .pujas,
+.welcome .menikmati {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome .selamat {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.welcome .pujas {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.welcome .menikmati {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.welcome .Menu-but {
+  position: relative;
+  z-index: 3;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #d1a05c;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-right: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  backdrop-filter: blur(5px);
+}
+
+.welcome .Menu-but:hover {
+  background-color: #d1a05c;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(209, 160, 92, 0.3);
+}
+
+/* Card section */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 75px 5% 75px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .card {
-  background-color: #d1a05c;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #d1a05c 0%, #bf8f4a 100%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  width: 200px;
-  margin: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #fff;
-  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
 }
 
-  .card:hover{
-    background-color: #000000a2;
-    color: rgb(255, 255, 255);
-  }
+.card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #000000a2 0%, #222 100%);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
 
-  .card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
 
-.upword{
-  background-color: #000;
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0 10px;
+}
+
+/* Section headers */
+.upword,
+.midword {
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.upword {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.midword h1 {
+  font-size: 2rem;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  padding: 0;
 }
 
-.midword{
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0 0;
-  margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-}
-
+/* Tenant menu */
 .tenant-menu {
   display: flex;
-  justify-content: flex-start; /* Align buttons to the start */
-  padding: 10px 0; /* Adjust padding for better spacing */
+  padding: 15px;
   background-color: #000;
-  margin-bottom: 0px;
-  font-family: 'Times New Roman', Times, serif;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  white-space: nowrap; /* Prevents line wrapping */
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1a05c #1e1e1e;
+}
+
+.tenant-menu::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tenant-menu::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.tenant-menu::-webkit-scrollbar-thumb {
+  background-color: #d1a05c;
+  border-radius: 3px;
 }
 
 .menu-button {
-  color: #d1a05c; /* Gold color for text */
-  background: #1e1e1e; /* Dark background for the button */
-  border: none; /* Remove border */
-  font-size: 18px; /* Larger font size */
-  padding: 10px 20px;
+  color: #d1a05c;
+  background: #1e1e1e;
+  border: none;
+  font-size: 1rem;
+  padding: 12px 24px;
+  margin-right: 10px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-right: 5px;
-  border-radius: 25px; /* Rounded corners */
-  font-family: 'Times New Roman', Times, serif;
-  flex-shrink: 0; /* Prevents buttons from shrinking */
-  white-space: nowrap; /* Prevent buttons from wrapping */
-}
-
-.menu-button:last-child {
-  margin-right: 0; /* Remove margin on the last button */
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .menu-button:hover {
-    background-color: #70552b; /* Gold-ish background on hover */
-    color: #fff;
+  background-color: #70552b;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .menu-button.active {
-    background-color: #d1a05c; /* Gold background for active button */
-    color: #000; /* Dark text for active button */
+  background-color: #d1a05c;
+  color: #000;
+  font-weight: 600;
 }
 
-@media (max-width: 768px){
-  body{
-    overflow-x: hidden;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome {
+    padding: 40px 20px;
+    text-align: center;
   }
 
-  .welcome{
-    padding: 0px, 50px, 420px;
-    font-size: 60px;
+  .welcome .selamat {
+    font-size: 1.8rem;
+  }
+
+  .welcome .pujas {
+    font-size: 3rem;
+  }
+
+  .welcome .menikmati {
+    font-size: 1.5rem;
+  }
+
+  .welcome .Menu-but {
+    padding: 12px 24px;
+    font-size: 1rem;
+    margin: 5px;
   }
 
   .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 100px 10px 75px;
+    padding: 40px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
   }
 
-  .card {
-    background-color: #d1a05c;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    width: 150px;
-    margin: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
+  .upword {
+    font-size: 2rem;
   }
 
-  .menu-button{
-    padding: 5px 5px;
-    font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+  .menu-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.6s ease-out;
 }
